@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+          <label>
+            Ingrese su nombre
+            <input name="username" placeholder="Escriba su nombre" />
+          </label>
+        </div>
+        <div>
+          <label>
+            ingrese contraseña
+            <input
+              type="password"
+              name="password"
+              placeholder="Escriba su contraseña"
+              required
+            />
+          </label>
+        </div>
+        <input type="submit" value="Iniciar sesion" />
+        <!-- <button>Enviar</button> -->
+        <button type="reset">
+          Borrar
+        </button>
+      </fieldset>
+      <fieldset>
+        <legend>Cultura general</legend>
+        <p>
+          Capital de Noruega:
+          <input type="radio" name="p1" value="1" /> Copenhague
+          <input type="radio" name="p1" value="2" /> Helsinki
+          <input type="radio" name="p1" value="3" /> Oslo
+        </p>
+        <p>
+          Fecha de la Revolución francesa:
+          <input type="radio" name="p2" value="1" /> 1492
+          <input type="radio" name="p2" value="2" /> 1789
+          <input type="radio" name="p2" value="3" /> 1917
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Datos varios</legend>
+        Correo: <input type="email" name="correo" size="40" />
+        <p>
+          Fecha:<input type="date" name="fecha" /> Hora:
+          <input type="time" name="hora" />
+        </p>
+        <p>
+          <label>Seleciona tu sexo</label>
+          <input type="checkbox" name="hombre" />hombre
+          <input type="checkbox" name="mujer" />mujer
+          <input type="checkbox" name="no quiero decirlo" />no quiero decirlo
+        </p>
+        <p>
+          <label>Selecciona una opcion</label>
+        </p>
+        <p>
+          <input type="radio" name="boton" value="1" />Opción 1<br />
+          <input type="radio" name="boton" value="2" />Opción 2<br />
+          <input type="radio" name="boton" value="3" />Opción 3
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Escribe tu comentario</legend>
+        <textarea
+          name="texto"
+          rows="3"
+          cols="30"
+          placeholder="Escriba algo"
+        ></textarea>
+        <p>
+          <label>Escoge una opcion</label>
+          <select name="menu">
+            <option>Uno</option>
+            <option>Dos</option>
+            <option>Tres</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>marca sexo de la tabla</legend>
+        <section>
+          <table>
+            <tbody>
+              <tr>
+                <th>Sexo</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td><input type="radio" name="hm" value="h" id="h" /></td>
+                <td><label for="h">Hombre</label></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="hm" value="m" id="m" /></td>
+                <td><label for="m">Mujer</label></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </fieldset>
+    </form>
+  </body>
+</html>

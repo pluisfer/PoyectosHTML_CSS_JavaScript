@@ -1,0 +1,48 @@
+.wrapper {
+  padding: 50px 0px;
+  height: 50px;
+  position: relative;
+  width: 300px;
+  background: url(img/eye-eyelashes-face-woman-63320.jpeg);
+}
+
+.triangle {
+  border-bottom: 50px solid #eee;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.right {
+  right: 0;
+  border-left: 100px solid transparent;
+}
+
+.left {
+  left: 0;
+  border-right: 100px solid transparent;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.forma {
+  width: 400px;
+  height: 400px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
